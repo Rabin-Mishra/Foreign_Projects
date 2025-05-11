@@ -1,0 +1,53 @@
+E:\NABIN>gcc binarySearch.c -o myProgram1a
+
+E:\NABIN>myProgram1a < lab1a.dat
+low=1 high=1 i=1 j=0
+Rank 1: Element 1
+low=0 high=4 i=2 j=0
+Rank 2: Element 1
+low=0 high=10 i=5 j=0
+Rank 5: Element 2
+low=6 high=7 i=6 j=0
+Rank 6: Element 5
+Rank 15: Element -1
+Rank 17: Element -1
+Rank 21: Element -1
+Rank 22: Element -1
+Rank 23: Element -1
+Rank 25: Element -1
+
+E:\NABIN>gcc binarySearch.c -o myProg2
+
+E:\NABIN>myProg2 < lab1b.dat 
+low=1 high=1 i=1 j=0
+Rank 1: Element 1
+low=0 high=5 i=2 j=0
+Rank 2: Element 3
+Rank 8: Element -1
+Rank 10: Element -1
+
+E:\NABIN>gcc binarySearch.c -o myProg3
+
+E:\NABIN>myProg3 < lab1c.dat
+low=28 high=28 i=28 j=0
+Rank 28: Element 12
+low=28 high=30 i=29 j=0
+Rank 29: Element 13
+low=30 high=30 i=30 j=0
+Rank 30: Element 14
+Rank 31: Element -1
+Rank 32: Element -1
+
+E:\NABIN>gcc binarySearch.c -o myProg3
+
+E:\NABIN>myprog3 < lab1d.dat
+low=50 high=50 i=50 j=0
+Rank 50: Element 28
+low=99 high=102 i=100 j=0
+Rank 100: Element 63
+low=150 high=150 i=150 j=0
+Rank 150: Element 98
+Rank 200: Element -1
+Rank 250: Element -1
+Rank 300: Element -1
+Rank 350: Element -1

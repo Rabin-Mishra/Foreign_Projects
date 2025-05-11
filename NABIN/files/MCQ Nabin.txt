@@ -1,0 +1,63 @@
+MCQ Nabin:
+2. The number of calls to merge() while performing mergesort on n items is:
+  >>>ans:proportional to n * log(n).
+
+3. Which of the following is true?
+  >>>ans:
+
+4.Which of the following is not true regarding a maxheap with 1000 elements?
+  >>>ans:C. The left child for the node with subscript 200 is stored at subscript 400
+..........Reason>>>>>.........:
+In a binary heap:
+
+>>>>A::The left child of a node at index i is located at index 2*i.
+>>>>B::The right child of a node at index i is located at index 2*i + 1.
+So, if you have a node at subscript 200, its left child should be at subscript 2200 = 400, and its right child should be at subscript 2200 + 1 = 401. The statement incorrectly suggests that the left child is at subscript 400, which is not consistent with the properties of a binary heap.
+
+5. The function is in which set?
+ >>>ans:A. O(n^2).
+
+6. The time for the following code is in which set?
+>>>ans:C.O(n^2(log(n)))
+
+7. Heapsort may be viewed as being a faster version of which sort?
+>>>ans:C.Selection
+
+8. The time to run the code below is in:
+     for (i=n-1; i>=0; i-=2)
+        for (j=5; j<n; j*=3)
+            sum+=i+j;
+>>>ans:A.O(n logn)
+
+9. Suppose that you have correctly determined some c and no to prove that . Which of the following is not necessarily true?
+>>>ans:D
+
+11. What is n, the number of elements, for the largest table that can be processed by binary search using no more than 10 probes?
+>>>ans:The largest table that can be processed by binary search using no more than 10 probes has 1024 elements.
+
+
+12. Suppose there is a large table with n integers in ascending order, possibly with repeated values. How much time is needed to determine the number of occurences of a particular value?
+>>>ans:B::O(log n).
+
+13. The time to run the code below is in:
+   for (i=n-1; i>=0; i--)
+      for (j=15; j<n; j+=2)
+         sum+=i+j;
+>>>ans:B>>O(n^2)
+
+15. Which of the following is solved heuristically by a greedy method?
+>>>ans:A. Fractional knapsack
+
+
+17. Suppose there is a large unordered table with n integers, possibly with repeated values. How much time is needed to determine the number of occurences of a particular value?
+>>>ans:C::O(n)
+
+18.A sort is said to be stable when:
+
+>>>ans::A. Items with the same key will appear in the same order in the output as in the input.
+
+19. Suppose a Huffman code tree is constructed for an alphabet with five symbols where each symbol has a probability of 0.2 of occuring. What is the expected bits per symbol?
+>>>ans:: 2 bits per symbol.
+
+20.The number of calls to heapExtractMin to build a Huffman code tree for n symbols is:
+>>>ans:: B. (n - 1)

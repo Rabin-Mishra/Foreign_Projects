@@ -1,0 +1,38 @@
+CSE 3318 Lab Assignment 2
+Due October 5
+Goals:
+1. Understanding of binary search.
+2. Understanding of subsequences.
+Requirements:
+1. Design, code, and test a C program to compute the maximum interleave factor i for an integer sequence X such that the resulting interleaved sequence X^(i) is a subsequence of another integer sequence A. 
+The input will be formatted as follows:
+a. Two integers giving the number of integers in sequences A and X(i.e.|A| and |X|).
+b. Each integer of A , one per line.
+c. The number -999999999 on a line by itself.
+d. Each integer of X, one per line.
+e. The number -999999999 on a line by itself.
+
+The input is to be read from standard input as one of 1) keyboard typing, 2) a shell redirect (<) from a file, or 3) cut-and-paste. Do NOT prompt for a file name!
+
+The interleaved sequence X^(i) for a sequence X and an interleave factor i ≥ 0 results from repeating each element of X exactly i times “in place”. So, if X = abbcda, X^(2) is aabbbbccddaa and X^(3) is aaabbbbbbcccdddaaa. X^(0) is always the empty sequence. (Aside for those with CSE
+3315 background:X^(i) is the ith power of sequence . So, if X= abbcda,X^(2) is
+abbcdaabbcda and X^(3) is abbcdaabbcdaabbcda by concatenation.)
+
+A sequence U is a subsequence of a sequence V if there is at least one way to delete |V|-|U| elements from V to leave the sequence U. So, U = cba is a subsequence of V = abcabcabc by performing these deletions from V= abcabcabc 
+
+The output of your program is the trace of the successes and failures of a binary search (including “low”, “mid”, and “high”) for determining the maximum interleave factor that satisfies the subsequence condition. The last line output should provide the maximum interleave factor.
+2. Submit your program on Canvas by 5:00 pm on Thursday, October 5. One of the comment lines
+should indicate the compilation command used on OMEGA.
+
+Getting Started:
+1. Assumptions about the input file:
+a.|A|>=|X|
+b. The integers in the two sequences will appear on lines by themselves. You may, however, simply read input using scanf("%d",&num).
+
+2. Arrays must be dynamically allocated based on the first line of the input.
+
+3. Thoroughly debug your subsequence testing code before attempting to call it from your binary search code. Subsequence testing is easily performed in O(|A|) time.
+
+4. Test cases are available on the course web page. The GTA may use other cases when checking your submissions.
+5. Your program must take time in Ο( |A| • log( |A| / |X |)), i.e. the subsequence test function will be called a logarithmic number of times in the controlling binary search code.
+6. Note that if X^(i+1) is a subsequence of A, then X^(i) is a subsequence of A. Likewise, if X^(i) is not a subsequence of A, then X^(i+1) is not a subsequence of A.
